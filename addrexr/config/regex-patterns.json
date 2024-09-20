@@ -1,0 +1,60 @@
+{
+    "addresses": {
+        "EVM": {
+            "description": "Ethereum-based addresses (EVM compatible)",
+            "regex": "^0x[a-fA-F0-9]{40}$"
+        },
+        "BTC": {
+            "description": "Bitcoin addresses (P2PKH and P2SH)",
+            "regex": "^(1[a-km-zA-HJ-NP-Z1-9]{25,34}|3[a-km-zA-HJ-NP-Z1-9]{25,34})$"
+        },
+        "BTC_bech32": {
+            "description": "Bitcoin Bech32 addresses",
+            "regex": "^(bc1)[a-zA-HJ-NP-Z0-9]{25,39}$"
+        },
+        "LTC": {
+            "description": "Litecoin addresses",
+            "regex": "^(L|M)[a-km-zA-HJ-NP-Z1-9]{26,33}$"
+        },
+        "DOGE": {
+            "description": "Dogecoin addresses",
+            "regex": "^D{1}[5-9A-HJ-NP-U]{1}[1-9A-HJ-NP-Za-km-z]{32}$"
+        },
+        "XMR": {
+            "description": "Monero addresses",
+            "regex": "^(4[0-9AB][1-9A-HJ-NP-Za-km-z]{93})$"
+        },
+        "SOL": {
+            "description": "Solana addresses",
+            "regex": "^[1-9A-HJ-NP-Za-km-z]{32,44}$"
+        },
+        "ADA": {
+            "description": "Cardano addresses",
+            "regex": "^(addr1|DdzFFzC|Ae2tdPwU)[0-9a-zA-Z]{50,}$"
+        },
+        "DOT": {
+            "description": "Polkadot addresses",
+            "regex": "^1[a-km-zA-HJ-NP-Z1-9]{47}$"
+        },
+        "XRP": {
+            "description": "Ripple (XRP) addresses",
+            "regex": "^r[1-9A-HJ-NP-Za-km-z]{25,34}$"
+        },
+        "TRX": {
+            "description": "Tron (TRX) addresses",
+            "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$"
+        },
+        "EOS": {
+            "description": "EOS addresses",
+            "regex": "^[a-z1-5]{12}$"
+        },
+        "XTZ": {
+            "description": "Tezos addresses",
+            "regex": "^(tz1|tz2|tz3)[a-zA-Z0-9]{33}$"
+        },
+        "ATOM": {
+            "description": "Cosmos (ATOM) addresses",
+            "regex": "^cosmos1[a-z0-9]{38}$"
+        }
+    }
+}
