@@ -14,6 +14,11 @@ def get_blockchains():
 def get_slugs(ticker):
     return 0
 
+def get_regex_patterns():
+    with open(os.path.join(os.path.dirname(__file__), 'config', 'regex-patterns.json')) as file:
+        data = json.load(file)
+    return json.dumps(data)
+
 if __name__ == "__main__":
     print(get_blockchains())
-
+    print(get_regex_patterns())
